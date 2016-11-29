@@ -1,0 +1,4 @@
+<%
+   Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
+   String connectSQL="jdbc:sqlserver://localhost:1433;DatabaseName=software";
+   Connection conn=java.sql.DriverManager.getConnection(connectSQL,"sa",""); 
